@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wong Tai Sin Temple - Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/donate.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header>
+      <div class="container1">
+        <input type="text" placeholder="Search about news and events..(Only trad. Chinese)" class="item" id="searchbar" />
+        <a href="../HTML/homepage.eng.html"
+          ><img
+            src="../images/wts_logo.png"
+            alt="WTS Logo"
+            class="item"
+            id="logo"
+        /></a>
+        <div class="item language-switcher">
+            <a href="../HTML/donate.html" class="lang-btn active">繁</a>
+            <a href="../HTML/donate.simp.html" class="lang-btn">簡</a>
+            <a href="../HTML/donate.eng.html" class="lang-btn">Eng</a>
+        </div>
+      </div>
+
+      <nav>
+        <a href="../HTML/about.eng.html">About Master Wong Tai Sin</a>
+        <a href="../HTML/news.eng.html">News</a>
+        <a href="../HTML/event.eng.html">Events</a>
+        <a href="../HTML/pray.eng.html">Online Praying</a>
+        <a href="../HTML/donate.eng.html">Donation</a>
+        <a href="../HTML/contact.eng.html">Contact Us</a>
+        <a href="../HTML/FAQ.eng.html">FAQ</a>
+      </nav>
+    </header>
+
+    <div class="container py-5">
+      <!-- 第一部分：慈善捐款 -->
+      <div class="donation-section">
+          <h2 class="section-title">Donation</h2>
+          <div class="section-content">
+              <p>Sik Sik Yuen is an approved tax exempt charitable organization. The main source of funding comes from generous donors and subsidies of the Government. Apart from supporting charity works such as social services, education, medical services, relief of sufferings, donations will also contribute to religious affairs and daily operation of Wong Tai Sin Temple.</p>
+          </div>
+      </div>
+  </div>
+
+    <div class="container py-5">
+        <!-- 第二部分：捐款方法 -->
+        <div class="donation-methods">
+            <h2 class="section-title text-center">Donation Method</h2>
+            
+            <div class="row mt-4">
+                <!-- 左側選項 -->
+                <div class="col-md-4">
+                    <div class="method-buttons">
+                        <button class="method-btn active" data-target="online">
+                            Online Donation
+                        </button>
+                        <button class="method-btn" data-target="other">
+                            Cheque/Octopus/AliPayHK
+                        </button>
+                        <button class="method-btn" data-target="bank">
+                            Bank Deposit
+                        </button>
+                        <button class="method-btn" data-target="pps">
+                            PPS
+                        </button>
+                        <button class="method-btn" data-target="inperson">
+                            Donate in person
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 右側內容 -->
+                <div class="col-md-8">
+                    <div class="method-content">
+                        <!-- 網上捐款表單 -->
+                        <div id="online" class="method-details active">
+                            <h3 class="sub-title">Donation Amount</h3>
+                            <p class="note">Donation of HK$100 or above can apply for tax deduction with official receipt.</p>
+                            <div class="form-group">
+                                <label for="donate-amount">HK$*</label>
+                                <div style="position:relative;">
+                                    <input type="number" class="form-control" id="donate-amount" min="100" required style="padding-right:2.5em;">
+                                    <span id="amount-error-icon" style="display:none;position:absolute;right:0.7em;top:50%;transform:translateY(-50%);color:#d32f2f;font-size:1.3em;">
+                                        <i class="bi bi-exclamation-circle"></i>
+                                    </span>
+                                </div>
+                                <div id="amount-error-msg" style="color:#d32f2f;font-size:0.98em;display:none;margin-top:0.2em;">Please fill in the donation amount</div>
+                            </div>
+                            <hr class="divider">
+                            
+                            <h3 class="sub-title">Donation Item
+                            </h3>
+                            <select class="form-select">
+                                <option>Sik Sik Yuen Charities Donation</option>
+                                <option>Temple and Religious Donation</option>
+                                <option>Wong Wan Tin Benevolence Fund (Medical Purpose)</option>
+                                <option>Sik Sik Yuen Emergency Fund</option>
+                            </select>
+                            <hr class="divider">
+                            
+                            <h3 class="sub-title">Donation Receipt</h3>
+                            <div class="form-group">
+                                <label for="donate-email">Email Address*</label>
+                                <div style="position:relative;">
+                                    <input type="email" class="form-control" id="donate-email" required style="padding-right:2.5em;">
+                                    <span id="email-error-icon" style="display:none;position:absolute;right:0.7em;top:50%;transform:translateY(-50%);color:#d32f2f;font-size:1.3em;">
+                                        <i class="bi bi-exclamation-circle"></i>
+                                    </span>
+                                </div>
+                                <div id="email-error-msg" style="color:#d32f2f;font-size:0.98em;display:none;margin-top:0.2em;">Please fill in the email address</div>
+                            </div>
+
+                            <!-- 新增同意收集個人資料勾選框 -->
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <input type="checkbox" id="agree-privacy">
+                                <label for="agree-privacy" style="display:inline;">
+                                    Personal data collection notice<br>
+                                    1.Sik Sik Yuen collects personal data only for issuing receipts, fostering communications, raising funds and conducting donor survey. All information collected will be kept strictly confidential. Should you have any enquiries, please call (852) 2327 8141.
+                                    2.Please refer to the detailed Personal Data Collection Statement.
+                                    If you have read the above information, please tick the box.
+                                </label>
+                            </div>
+                            <button class="submit-btn" id="donate-submit" disabled>Submit</button>
+                        </div>
+                        
+                        <!-- 其他捐款方式內容 -->
+                        <div id="other" class="method-details">
+                            <!-- 支票部分 -->
+                            <h3 class="sub-title">Cheque</h3>
+                            <p>1.Crossed Cheque: Payable to “Sik Sik Yuen”</p>
+                            <p>2.Download and complete the donation form</p>
+                            <p>3.Mail both cheque and donation form to us by post: Sik Sik Yuen, 2 Chuk Yuen Village, Wong Tai Sin, Kowloon.</p>
+                            <p>4.Official receipt will be issued for donation.</p>
+                            <p class="note">* Donors with donation of HK$100 or above can apply for tax deduction with official receipt.</p>
+                            <p>Personal data collected will only be used by SIK SIK YUEN, for issuing receipts, fostering communications, raising funds and conducting donor survey. All information collected will be kept strictly confidential. Should you have any enquiries, please call (852) 2327 8141.</p>
+                            <a href="https://www2.siksikyuen.org.hk/docs/default-source/%E6%85%88%E5%96%84%E6%8D%90%E6%AC%BE/ssyf-go-016(v1-1)_%E6%8D%90%E6%AC%BE%E8%A1%A8%E6%A0%BC.pdf" class="download-btn">Donation Form</a>
+                            <hr class="divider">
+
+                            <!-- 八達通部分 -->
+                            <h3 class="sub-title">Octopus</h3>
+                            <p>Please scan the QR code by mobile phone to make donation by Octopus.</p>
+                            <img src="../Images/donate1.jpg" alt="八達通捐款二維碼" class="method-image">
+                            <hr class="divider">
+
+                            <!-- 支付寶香港部分 -->
+                            <h3 class="sub-title">AlipayHK</h3>
+                            <p>Please scan the QR code by mobile phone to enter the Sik Sik Yuen charity page on AlipayHK for donation.</p>
+                            <img src="../Images/donate2.jpg" alt="支付寶香港捐款二維碼" class="method-image">
+                            <hr class="divider">
+
+                            <!-- PayMe部分 -->
+                            <h3 class="sub-title">PayMe</h3>
+                            <p>Please scan the QR code by mobile phone to make donation by PayMe
+                            </p>
+                            <img src="../Images/donate3.jpeg" alt="PayMe捐款二維碼" class="method-image">
+                        </div>
+
+                        <!-- 銀行存款內容 -->
+                        <div id="bank" class="method-details">
+                            <h3 class="sub-title">Bank In / Transfer</h3>
+                            <p>1.Deposit to our bank account:</p>
+                            <p>Bank Name: Hang Seng Bank</p>
+                            <p>Account No.: 293-1-328328</p>
+                            <p>Account Name: Sik Sik Yuen</p>
+                            <p>2.Download and complete the donation form</p>
+                            <p>3.Send the deposit slip and donation form by one of the following ways:</p>
+                            <p>Post: Sik Sik Yuen, 2 Chuk Yuen Village, Wong Tai Sin, Kowloon.</p>
+                            <p>Email: donation@siksikyuen.org.hk</p>
+                            <p>Fax：(852) 2351 5640</p>
+                            <p>4.Official receipt will be issued for donation</p>
+                            <p class="note">*Donors with donation of HK$100 or above can apply for tax deduction with official receipt.</p>
+                            <p>Personal data collected will only be used by SIK SIK YUEN, for issuing receipts, fostering communications, raising funds and conducting donor survey. All information collected will be kept strictly confidential. Should you have any enquiries, please call (852) 2327 8141.
+                            </p>
+                            <a href="https://www2.siksikyuen.org.hk/docs/default-source/%E6%85%88%E5%96%84%E6%8D%90%E6%AC%BE/ssyf-go-016(v1-1)_%E6%8D%90%E6%AC%BE%E8%A1%A8%E6%A0%BC.pdf?sfvrsn=680e3741_6" class="download-btn">Donation Form</a>
+                        </div>
+
+                        <!-- 繳費靈內容 -->
+                        <div id="pps" class="method-details">
+                            <h3 class="sub-title">PPS</h3>
+                            <p>1.Merchant Code: 9743</p>
+                            <p>Merchant Name: Sik Sik Yuen</p>
+                            <p>2.Donors can retain the PPS Ref. No. for their own record.</p>
+                            <p>3.Official receipt will be issued for donation.</p>
+                            <p class="note">* Donors with donation of HK$100 or above can apply for tax deduction with official receipt.</p>
+                            <p>Personal data collected will only be used by SIK SIK YUEN, for issuing receipts, fostering communications, raising funds and conducting donor survey. All information collected will be kept strictly confidential. Should you have any enquiries, please call (852) 2327 8141.</p>
+                        </div>
+
+                        <!-- 親臨捐款內容 -->
+                        <div id="inperson" class="method-details">
+                            <h3 class="sub-title">In person</h3>
+                            <p>Please visit the General Office in Wong Tai Sin Temple within the office hours (Monday – Sunday 8 a.m. to 4:30 p.m.) at Sik Sik Yuen, 2 Chuk Yuen Village, Wong Tai Sin, Kowloon. Donation via Cash, cheque, bank deposit, credit card, Octopus Card, Alipay (HK) and WeChat Pay (HK) are acceptable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2025 Sik Sik Yuen. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="../HTML/collectionstatement.html" class="footer-link">Personal Information Collection Statement</a>
+        <span class="footer-separator">|</span>
+        <a href="../HTML/disclaimer.html" class="footer-link">Disclaimer</a>
+        <span class="footer-separator">|</span>
+        <a href="../HTML/mobileapp.html" class="footer-link">App Download</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.method-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.method-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                document.querySelectorAll('.method-details').forEach(content => {
+                    content.classList.remove('active');
+                });
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+        // 新增：同意勾選控制提交按鈕 + email 驗證 + 金額驗證
+        const agreePrivacy = document.getElementById('agree-privacy');
+        const donateSubmit = document.getElementById('donate-submit');
+        const donateEmail = document.getElementById('donate-email');
+        const emailErrorMsg = document.getElementById('email-error-msg');
+        const emailErrorIcon = document.getElementById('email-error-icon');
+        const donateAmount = document.getElementById('donate-amount');
+        const amountErrorMsg = document.getElementById('amount-error-msg');
+        const amountErrorIcon = document.getElementById('amount-error-icon');
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+        function validateAmount(amount) {
+            return amount && !isNaN(amount) && Number(amount) >= 100;
+        }
+        function updateSubmitState() {
+            // Email 驗證
+            const emailValid = validateEmail(donateEmail.value);
+            if (!donateEmail.value) {
+                emailErrorMsg.style.display = 'block';
+                emailErrorMsg.textContent = 'Please fill in the email address';
+                donateEmail.style.borderColor = '#d32f2f';
+                emailErrorIcon.style.display = 'inline';
+            } else if (!emailValid) {
+                emailErrorMsg.style.display = 'block';
+                emailErrorMsg.textContent = 'Please enter a valid email address';
+                donateEmail.style.borderColor = '#d32f2f';
+                emailErrorIcon.style.display = 'inline';
+            } else {
+                emailErrorMsg.style.display = 'none';
+                donateEmail.style.borderColor = '';
+                emailErrorIcon.style.display = 'none';
+            }
+            // 金額驗證
+            const amountValid = validateAmount(donateAmount.value);
+            if (!donateAmount.value) {
+                amountErrorMsg.style.display = 'block';
+                amountErrorMsg.textContent = 'Please fill in the donation amount';
+                donateAmount.style.borderColor = '#d32f2f';
+                amountErrorIcon.style.display = 'inline';
+            } else if (!amountValid) {
+                amountErrorMsg.style.display = 'block';
+                amountErrorMsg.textContent = 'Donation amount must be HK$100 or above';
+                donateAmount.style.borderColor = '#d32f2f';
+                amountErrorIcon.style.display = 'inline';
+            } else {
+                amountErrorMsg.style.display = 'none';
+                donateAmount.style.borderColor = '';
+                amountErrorIcon.style.display = 'none';
+            }
+            donateSubmit.disabled = !(agreePrivacy.checked && emailValid && amountValid);
+        }
+        if (agreePrivacy && donateSubmit && donateEmail && donateAmount) {
+            agreePrivacy.addEventListener('change', updateSubmitState);
+            donateEmail.addEventListener('input', updateSubmitState);
+            donateAmount.addEventListener('input', updateSubmitState);
+            updateSubmitState();
+            // 新增：提交後跳轉到 PayPal
+            donateSubmit.addEventListener('click', function() {
+                if (!donateSubmit.disabled) {
+                    window.location.href = 'https://www.paypal.com/hk/webapps/mpp/send-payments-online';
+                }
+            });
+        }
+    </script>
+
+        <!-- 搜尋功能 JavaScript -->
+        <script src="../JavaScript/search.js"></script>
+        
+  </body>
+</html>

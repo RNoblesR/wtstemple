@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>啬色园 - 黄大仙庙</title>
+    <link rel="stylesheet" href="../CSS/building.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+      .page-content {
+        text-align: center;
+      }
+
+      .route-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+        padding: 0 20px;
+      }
+
+      .route-label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .route-btn {
+        background-color: #862d2d;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .route-btn:hover {
+        background-color: #a13737;
+        transform: translateY(-2px);
+      }
+
+      .arrow {
+        color: #ee3636;
+        font-size: 1.5rem;
+        margin: 0 5px;
+      }
+
+      .route-image {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .main-title {
+        text-align: center;
+        margin: 2rem 0;
+        color: #eb1d1d;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container1">
+        <input type="text" placeholder="Search about news and events..(Only trad. Chinese)" class="item" id="searchbar" />
+        <a href="../HTML/homepage.simp.html"
+          ><img
+            src="../images/wts_logo.png"
+            alt="WTS Logo"
+            class="item"
+            id="logo"
+        /></a>
+        <div class="item language-switcher">
+          <a href="../HTML/routeEasy.html" class="lang-btn">繁</a>
+          <a href="../HTML/routeEasy.simp.html" class="lang-btn active">简</a>
+          <a href="../HTML/routeEasy.eng.html" class="lang-btn">Eng</a>
+        </div>
+      </div>
+
+      <nav>
+        <a href="../HTML/about.simp.html">关于黄大仙</a>
+        <a href="../HTML/news.simp.html">最新消息</a>
+        <a href="../HTML/event.simp.html">活动</a>
+        <a href="../HTML/pray.simp.html">网上参神</a>
+        <a href="../HTML/donate.simp.html">捐款</a>
+        <a href="../HTML/contact.simp.html">联络我们</a>
+        <a href="../HTML/faq.simp.html">常见问题</a>
+      </nav>
+    </header>
+
+    <div class="page-content">
+      <!-- Main Title -->
+      <div class="container mt-2">
+        <h1 class="main-title">简易参神路线</h1>
+      </div>
+
+      <!-- Route Navigation -->
+      <div class="container">
+        <div class="route-container">
+          <span class="route-label">路线:</span>
+          <button class="route-btn">第一洞天牌坊</button>
+          <span class="arrow">&gt;</span>
+          <button class="route-btn">第一参神平台</button>
+          <span class="arrow">&gt;</span>
+          <button class="route-btn">三圣堂</button>
+          <span class="arrow">&gt;</span>
+          <button class="route-btn">盂香亭</button>
+        </div>
+
+        <!-- Route Image -->
+        <img src="../images/Easyroute.png" alt="简易参神路线图" class="route-image">
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2025 Sik Sik Yuen. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="../HTML/collectionstatement.html" class="footer-link">收集个人资料声明</a>
+        <span class="footer-separator">|</span>
+        <a href="../HTML/disclaimer.html" class="footer-link">免责声明</a>
+        <span class="footer-separator">|</span>
+        <a href="../HTML/mobileapp.html" class="footer-link">啬色园流动程式</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 搜尋功能 JavaScript -->
+    <script src="../JavaScript/search.js"></script>
+  </body>
+</html> 

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>黄大仙庙 - 捐款方法</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/donate.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header>
+      <div class="container1">
+        <input type="text" placeholder="Search about news and events..(Only trad. Chinese)" class="item" id="searchbar" />
+        <a href="../HTML/homepage.simp.html"
+          ><img
+            src="../images/wts_logo.png"
+            alt="WTS Logo"
+            class="item"
+            id="logo"
+        /></a>
+        <div class="item language-switcher">
+            <a href="../HTML/donate.html" class="lang-btn active">繁</a>
+            <a href="../HTML/donate.simp.html" class="lang-btn">簡</a>
+            <a href="../HTML/donate.eng.html" class="lang-btn">Eng</a>
+        </div>
+      </div>
+
+      <nav>
+        <a href="../HTML/about.simp.html">关于黄大仙</a>
+        <a href="../HTML/news.simp.html">最新消息</a>
+        <a href="../HTML/event.simp.html">活动</a>
+        <a href="../HTML/pray.simp.html">网上参神</a>
+        <a href="../HTML/donate.simp.html">捐款</a>
+        <a href="../HTML/contact.simp.html">联络我们</a>
+        <a href="../HTML/faq.simp.html">常见问题</a>
+      </nav>
+    </header>
+
+    <div class="container py-5">
+      <!-- 第一部分：慈善捐款 -->
+      <div class="donation-section">
+          <h2 class="section-title">慈善捐款</h2>
+          <div class="section-content">
+              <p>本园为政府认可获豁免缴税的慈善团体，收入来源主要来自各界善长仁翁的捐献，以及政府的津助。所得的款额除了用于各项善业如社会服务、教育、医疗服务、紧急援助等项目外，并用于宗教事务及黄大仙祠的日常运作上。</p>
+          </div>
+      </div>
+  </div>
+
+    <div class="container py-5">
+        <!-- 第二部分：捐款方法 -->
+        <div class="donation-methods">
+            <h2 class="section-title text-center">捐款方法</h2>
+            
+            <div class="row mt-4">
+                <!-- 左側選項 -->
+                <div class="col-md-4">
+                    <div class="method-buttons">
+                        <button class="method-btn active" data-target="online">
+                            网上捐款
+                        </button>
+                        <button class="method-btn" data-target="other">
+                            支票/八达通/支付宝香港
+                        </button>
+                        <button class="method-btn" data-target="bank">
+                            银行存款
+                        </button>
+                        <button class="method-btn" data-target="pps">
+                            缴费灵
+                        </button>
+                        <button class="method-btn" data-target="inperson">
+                            亲临捐款
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 右側內容 -->
+                <div class="col-md-8">
+                    <div class="method-content">
+                        <!-- 網上捐款表單 -->
+                        <div id="online" class="method-details active">
+                            <h3 class="sub-title">捐款金额</h3>
+                            <p class="note">捐款满港币100元或以上可凭收据向政府申请免税</p>
+                            <div class="form-group">
+                                <label for="donate-amount">HK$*</label>
+                                <div style="position:relative;">
+                                    <input type="number" class="form-control" id="donate-amount" min="100" required style="padding-right:2.5em;">
+                                    <span id="amount-error-icon" style="display:none;position:absolute;right:0.7em;top:50%;transform:translateY(-50%);color:#d32f2f;font-size:1.3em;">
+                                        <i class="bi bi-exclamation-circle"></i>
+                                    </span>
+                                </div>
+                                <div id="amount-error-msg" style="color:#d32f2f;font-size:0.98em;display:none;margin-top:0.2em;">请填上捐款金额</div>
+                            </div>
+                            <hr class="divider">
+                            
+                            <h3 class="sub-title">捐助項目</h3>
+                            <select class="form-select">
+                                <option>慈善捐款 (医疗/社福/教育/其他慈善服务)</option>
+                                <option>香油捐献</option>
+                                <option>黄允畋慈善基金(医疗)</option>
+                                <option>啬色园紧急援助基金</option>
+                            </select>
+                            <hr class="divider">
+                            
+                            <h3 class="sub-title">捐款收据</h3>
+                            <div class="form-group">
+                                <label for="donate-email">电邮地址*</label>
+                                <div style="position:relative;">
+                                    <input type="email" class="form-control" id="donate-email" required style="padding-right:2.5em;">
+                                    <span id="email-error-icon" style="display:none;position:absolute;right:0.7em;top:50%;transform:translateY(-50%);color:#d32f2f;font-size:1.3em;">
+                                        <i class="bi bi-exclamation-circle"></i>
+                                    </span>
+                                </div>
+                                <div id="email-error-msg" style="color:#d32f2f;font-size:0.98em;display:none;margin-top:0.2em;">请填上电邮地址</div>
+                            </div>
+                            <!-- 新增同意收集個人資料勾選框 -->
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <input type="checkbox" id="agree-privacy">
+                                <label for="agree-privacy" style="display:inline;">
+                                    收集个人资料注意事项<br>
+                                    1.啬色园所收集之个人资料只供本园作发出收据、通讯、筹款及收集意见之用。所有资料绝对保密及只会向让须处理此申请之职员/银行/信用咭公司透露。您有权随时向本园查询、更改或要求停止使用您的个人资料作前述用途。如有任何问题，可致电 (852) 2327 8141 与本园联络。<br>
+                                    2.请参阅详细 收集个人资料声明<br><br>
+                                    若阁下已了解上述资讯，请在方格内加上剔号。
+                                </label>
+                            </div>
+                            <button class="submit-btn" id="donate-submit" disabled>提交</button>
+                        </div>
+                        
+                        <!-- 其他捐款方式內容 -->
+                        <div id="other" class="method-details">
+                            <!-- 支票部分 -->
+                            <h3 class="sub-title">支票</h3>
+                            <p>1.划线支票抬头: 啬色园</p>
+                            <p>2.下载并填写捐款表格</p>
+                            <p>3.将支票连同捐款表格邮寄至九龙黄大仙竹园村二号啬色园总办事处收</p>
+                            <p>4.本园将会为捐款者发出正式收据</p>
+                            <p class="note">* 捐款满港币100元或以上可凭收据向政府申请免税</p>
+                            <p>啬色园所收集之个人资料只供本园作发出收据、通讯、筹款及收集意见之用。所有资料绝对保密。如有任何问题，可致电(852) 2327 8141 与本园联络。</p>
+                            <a href="https://www2.siksikyuen.org.hk/docs/default-source/%E6%85%88%E5%96%84%E6%8D%90%E6%AC%BE/ssyf-go-016(v1-1)_%E6%8D%90%E6%AC%BE%E8%A1%A8%E6%A0%BC.pdf" class="download-btn">捐款表格下載</a>
+                            <hr class="divider">
+
+                            <!-- 八達通部分 -->
+                            <h3 class="sub-title">八达通</h3>
+                            <p>请使用手机扫描以下二维码以使用八达通捐款。</p>
+                            <img src="../Images/donate1.jpg" alt="八達通捐款二維碼" class="method-image">
+                            <hr class="divider">
+
+                            <!-- 支付寶香港部分 -->
+                            <h3 class="sub-title">支付宝香港</h3>
+                            <p>请使用手机扫描以下二维码，直接进入吝啬色园在支付宝香港的慈善专页捐款。</p>
+                            <img src="../Images/donate2.jpg" alt="支付寶香港捐款二維碼" class="method-image">
+                            <hr class="divider">
+
+                            <!-- PayMe部分 -->
+                            <h3 class="sub-title">PayMe</h3>
+                            <p>请使用手机扫描以下二维码，以使用PayMe捐款。</p>
+                            <img src="../Images/donate3.jpeg" alt="PayMe捐款二維碼" class="method-image">
+                        </div>
+
+                        <!-- 銀行存款內容 -->
+                        <div id="bank" class="method-details">
+                            <h3 class="sub-title">银行存款</h3>
+                            <p>1.转帐到以下户口:</p>
+                            <p>银行名称: 恒生银行</p>
+                            <p>户口号码: 293-1-328328</p>
+                            <p>户口名: 啬色园</p>
+                            <p>2.下载并填写捐款表格</p>
+                            <p>3.将银行存款记录单正本或副本连同捐款表格透过以下方式通知本园总办事处：</p>
+                            <p>邮寄：九龙黄大仙竹园村二号啬色园总办事处</p>
+                            <p>电邮：donation@siksikyuen.org.hk</p>
+                            <p>传真：(852) 2351 5640</p>
+                            <p>4.本园将会为捐款者发出正式收据</p>
+                            <p class="note">*捐款满港币100元或以上可凭收据向政府申请免税</p>
+                            <p>啬色园所收集之个人资料只供本园作发出收据、通讯、筹款及收集意见之用。所有资料绝对保密。如有任何问题，可致电(852) 2327 8141 与本园联络。</p>
+                            <a href="https://www2.siksikyuen.org.hk/docs/default-source/%E6%85%88%E5%96%84%E6%8D%90%E6%AC%BE/ssyf-go-016(v1-1)_%E6%8D%90%E6%AC%BE%E8%A1%A8%E6%A0%BC.pdf?sfvrsn=680e3741_6" class="download-btn">捐款表格下载</a>
+                        </div>
+
+                        <!-- 繳費靈內容 -->
+                        <div id="pps" class="method-details">
+                            <h3 class="sub-title">缴费灵</h3>
+                            <p>1.缴费灵编号：9743</p>
+                            <p>商家名称：啬色园</p>
+                            <p>2.完成捐款后可自行保留缴费灵付款编号作记录</p>
+                            <p>3.本园将会为捐款者发出正式收据</p>
+                            <p class="note">* 捐款满港币100元或以上可凭收据向政府申请免税</p>
+                            <p>啬色园所收集之个人资料只供本园作发出收据、通讯、筹款及收集意见之用。所有资料绝对保密。如有任何问题，可致电(852) 2327 8141 与本园联络。</p>
+                        </div>
+
+                        <!-- 親臨捐款內容 -->
+                        <div id="inperson" class="method-details">
+                            <h3 class="sub-title">亲自捐款</h3>
+                            <p>欢迎善信及善长于办公时间星期一至日上午8时至下午4时30分亲临九龙黄大仙竹园村二号啬色园总办事处，透过现金、支票、银行自动转帐、信用卡、八达通、支付宝或微信支付方式办理捐款手续，或把善款投入祠内捐款。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2025 Sik Sik Yuen. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="../HTML/collectionstatement.html" class="footer-link">收集个人资料声明</a>
+        <span class="footer-separator">|</span>
+        <a href="../HTML/disclaimer.html" class="footer-link">免责声明</a>
+        <span class="footer-separator">|</span>
+        <a href="../HTML/mobileapp.html" class="footer-link">啬色园流动程式</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.method-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.method-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                document.querySelectorAll('.method-details').forEach(content => {
+                    content.classList.remove('active');
+                });
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+        // 新增：同意勾選控制提交按鈕 + email 驗證 + 金額驗證
+        const agreePrivacy = document.getElementById('agree-privacy');
+        const donateSubmit = document.getElementById('donate-submit');
+        const donateEmail = document.getElementById('donate-email');
+        const emailErrorMsg = document.getElementById('email-error-msg');
+        const emailErrorIcon = document.getElementById('email-error-icon');
+        const donateAmount = document.getElementById('donate-amount');
+        const amountErrorMsg = document.getElementById('amount-error-msg');
+        const amountErrorIcon = document.getElementById('amount-error-icon');
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+        function validateAmount(amount) {
+            return amount && !isNaN(amount) && Number(amount) >= 100;
+        }
+        function updateSubmitState() {
+            // Email 驗證
+            const emailValid = validateEmail(donateEmail.value);
+            if (!donateEmail.value) {
+                emailErrorMsg.style.display = 'block';
+                emailErrorMsg.textContent = '请填上电邮地址';
+                donateEmail.style.borderColor = '#d32f2f';
+                emailErrorIcon.style.display = 'inline';
+            } else if (!emailValid) {
+                emailErrorMsg.style.display = 'block';
+                emailErrorMsg.textContent = '请输入有效的电邮地址';
+                donateEmail.style.borderColor = '#d32f2f';
+                emailErrorIcon.style.display = 'inline';
+            } else {
+                emailErrorMsg.style.display = 'none';
+                donateEmail.style.borderColor = '';
+                emailErrorIcon.style.display = 'none';
+            }
+            // 金額驗證
+            const amountValid = validateAmount(donateAmount.value);
+            if (!donateAmount.value) {
+                amountErrorMsg.style.display = 'block';
+                amountErrorMsg.textContent = '请填上捐款金额';
+                donateAmount.style.borderColor = '#d32f2f';
+                amountErrorIcon.style.display = 'inline';
+            } else if (!amountValid) {
+                amountErrorMsg.style.display = 'block';
+                amountErrorMsg.textContent = '捐款金额必须不少于100';
+                donateAmount.style.borderColor = '#d32f2f';
+                amountErrorIcon.style.display = 'inline';
+            } else {
+                amountErrorMsg.style.display = 'none';
+                donateAmount.style.borderColor = '';
+                amountErrorIcon.style.display = 'none';
+            }
+            donateSubmit.disabled = !(agreePrivacy.checked && emailValid && amountValid);
+        }
+        if (agreePrivacy && donateSubmit && donateEmail && donateAmount) {
+            agreePrivacy.addEventListener('change', updateSubmitState);
+            donateEmail.addEventListener('input', updateSubmitState);
+            donateAmount.addEventListener('input', updateSubmitState);
+            updateSubmitState();
+            // 新增：提交後跳轉到 PayPal
+            donateSubmit.addEventListener('click', function() {
+                if (!donateSubmit.disabled) {
+                    window.location.href = 'https://www.paypal.com/hk/webapps/mpp/send-payments-online';
+                }
+            });
+        }
+
+    </script>
+
+        <!-- 搜尋功能 JavaScript -->
+        <script src="../JavaScript/search.js"></script>
+  </body>
+</html>

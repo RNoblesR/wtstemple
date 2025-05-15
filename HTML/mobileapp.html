@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>免責聲明 - 黄大仙廟</title>
+    <link rel="stylesheet" href="../CSS/statement.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  </head>
+
+  <style>
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.social-link img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.1);
+}
+
+/* 應用程式下載按鈕樣式 */
+.app-download {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.app-link img {
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.app-link:hover img {
+    transform: scale(1.05);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .social-media {
+        gap: 1rem;
+    }
+    
+    .app-download {
+        gap: 1rem;
+    }
+    
+    .social-link img {
+        height: 40px;
+    }
+    
+    .app-link img {
+        height: 120px;
+    }
+}
+
+.section:last-child {
+    margin-bottom: -1.5cm;
+}
+
+.section-divider {
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(191, 26, 47, 0.2);
+} 
+  </style>
+
+
+  <body>
+    <header>
+      <div class="container1">
+        <input type="text" placeholder="Search about news and events..(Only trad. Chinese)" class="item" id="searchbar" />
+        <a href="../HTML/homepage.html"
+          ><img
+            src="../images/wts_logo.png"
+            alt="WTS Logo"
+            class="item"
+            id="logo"
+        /></a>
+        <div class="item language-switcher">
+          <a href="../HTML/mobileapp.html" class="lang-btn">繁</a>
+          <a href="../HTML/mobileapp.simp.html" class="lang-btn active">简</a>
+          <a href="../HTML/mobileapp.eng.html" class="lang-btn">Eng</a>
+        </div>
+      </div>
+
+      <nav>
+        <a href="../HTML/about.html">關於黃大仙</a>
+        <a href="../HTML/news.html">最新消息</a>
+        <a href="../HTML/event.html">活動</a>
+        <a href="../HTML/pray.html">網上參神</a>
+        <a href="../HTML/donate.html">捐款</a>
+        <a href="../HTML/contact.html">聯絡我們</a>
+        <a href="../HTML/faq.html">常見問題</a>
+    </nav>
+    </header>
+
+    <div class="section">
+      <h2 class="section-title text-center">本祠程式下載</h2>
+      <div class="section-content text-center">
+          <p>嗇色園TAO-NET提供多種資訊及功能，包括黃大仙靈簽查詢、生肖查詢、企業新聞、宗教儀式等活動、網路捐款服務、電子書閱讀等。此帳號可在參觀黃大仙祠時用作免費Wi-Fi接入。還提供PC版本，可以與此應用程式一起使用。開始註冊 TAO-NET 帳戶以取得個人化功能。新功能還包括即時串流媒體、行動導遊和聊天機器人支援電子服務。</p>
+          <div class="app-download">
+              <a href="https://play.google.com/store/apps/details?id=com.bullb.ssyla&hl=en" class="app-link">
+                  <img src="../Images/gp.png" alt="Google Play">
+              </a>
+              <a href="https://apps.apple.com/az/app/%E5%97%87%E8%89%B2%E5%9C%92%E9%BB%83%E5%A4%A7%E4%BB%99/id494829239" class="app-link">
+                  <img src="../Images/as.png" alt="App Store">
+              </a>
+          </div>
+          <div class="text-center" style="margin-top:18px;">
+              <img src="../Images/app.jpg" alt="App">
+          </div>
+      </div>
+  </div>
+</div>
+
+    <footer class="footer">
+      <p>&copy; 2025 Sik Sik Yuen. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="../HTML/collectionstatement.html" class="footer-link">收集個人資料聲明</a>
+        <span class="footer-separator">|</span>
+        <a href="../HTML/disclaimer.html" class="footer-link">免責聲明</a>
+        <span class="footer-separator">|</span>
+        <a href="../HTML/mobileapp.html" class="footer-link">嗇色園流動程式</a>
+      </div>
+    </footer>
+
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- 搜尋功能 JavaScript -->
+        <script src="../JavaScript/search.js"></script>
+  </body>
+</html> 
