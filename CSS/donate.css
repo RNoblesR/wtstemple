@@ -1,0 +1,427 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    padding-bottom: 70px; /* footer高度+間距，避免內容被footer遮蓋 */
+}
+header {
+    background: #BF1A2F;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    margin: 10px 0;
+    margin-top: 20px;
+
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #BF1A2F;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #BF1A2F;
+    color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+}
+
+.item {
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) { 
+    #logo { position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3%;
+  transform: translate(-50%, -50%);
+  max-height: 60px; 
+  height: auto;}
+}
+
+#logo {
+    margin: 0 auto;
+    width: 100px;
+    text-align:center;
+}
+
+.slideandinfo {
+    display: flex;
+    padding: 20px;
+}
+.slideshow {
+    flex: 2.5;
+    margin-right: 20px;
+}
+.slideshow img {
+    width: 100%;
+    height: auto;
+}
+.info {
+    flex: 1;
+}
+
+.map {
+    text-align: center;
+}
+
+.map img {
+    max-width: 100%;
+}
+
+#searchbar {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+
+
+#searchbar::placeholder {
+    color: #999;
+}
+
+/* 全局樣式 */
+body {
+    background-color: #f8f9fa;
+    font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+/* 捐款區塊樣式 */
+.donation-section {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* 區塊標題樣式 */
+.section-title {
+    color: #BF1A2F;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #BF1A2F;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* 區塊內容樣式 */
+.section-content {
+    text-align: center;
+}
+
+.section-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 0;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .donation-section {
+        padding: 1.5rem 0;
+        margin: 0 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .section-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* 捐款方法區塊樣式 */
+.donation-methods {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* 區塊標題樣式 */
+.section-title {
+    color: #BF1A2F;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* 方法按鈕樣式 */
+.method-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.method-btn {
+    background-color: #fff;
+    color: #BF1A2F;
+    border: 2px solid #BF1A2F;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.method-btn:hover {
+    background-color: #BF1A2F;
+    color: white;
+}
+
+.method-btn.active {
+    background-color: #BF1A2F;
+    color: white;
+}
+
+/* 方法內容樣式 */
+.method-content {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    min-height: 400px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.method-details {
+    display: none;
+}
+
+.method-details.active {
+    display: block;
+}
+
+/* 表單樣式 */
+.sub-title {
+    color: #BF1A2F;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.note {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 1.5rem 0;
+}
+
+.submit-btn {
+    background-color: #BF1A2F;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #9e1526;
+}
+
+/* 圖片樣式 */
+.method-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 八達通二維碼圖片特定樣式 */
+.method-image[src*="donate1.jpg"] {
+    max-width: 33.33%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* PayMe二維碼圖片特定樣式 */
+.method-image[src*="donate3.jpeg"] {
+    max-width: 33.33%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* 支付寶香港二維碼圖片特定樣式 */
+.method-image[src*="donate2.jpg"] {
+    display: block;
+    margin: 1rem auto;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .method-buttons {
+        margin-bottom: 2rem;
+    }
+    
+    .method-content {
+        padding: 1.5rem;
+        min-height: 300px;
+    }
+    
+    .sub-title {
+        font-size: 1.3rem;
+    }
+    
+    .method-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+/* 下載按鈕樣式 */
+.download-btn {
+    display: inline-block;
+    background-color: #BF1A2F;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #9e1526;
+    color: white;
+    text-decoration: none;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s;
+  }
+  
+  .footer-link:hover {
+    color: #d4af37;
+    text-decoration: underline;
+  }
+  
+  .footer-separator {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 15px;
+  }
